@@ -1,6 +1,10 @@
 swig-emails
 ==========
 
+[![Build Status](https://travis-ci.org/SamyPesse/swig-emails.png?branch=master)](https://travis-ci.org/SamyPesse/swig-emails)
+[![NPM version](https://badge.fury.io/js/swig-emails.svg)](http://badge.fury.io/js/swig-emails)
+
+
 Generate HTML emails using swig templates.
 
 
