@@ -5,7 +5,7 @@ swig-emails
 [![NPM version](https://badge.fury.io/js/swig-emails.svg)](http://badge.fury.io/js/swig-emails)
 
 
-Generate HTML emails using swig templates.
+Generate HTML emails using swig templates. Inspired by [andrewrk/swig-email-templates](https://github.com/andrewrk/swig-email-templates).
 
 
 ## Features
