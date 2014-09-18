@@ -3,6 +3,7 @@ var assert = require('assert');
 var path = require('path');
 var Pend = require('pend');
 var fs = require('fs');
+var _ = require('lodash');
 
 var testMap = {
     "simple_vars": {
@@ -17,19 +18,6 @@ var testMap = {
         scalar2: "scalar2",
         xyz: [ "abcd" ],
         lalala: "lalala"
-    },
-    "plays": {
-        subject: "subject",
-        emailPreferencesUrl: "emailPreferencesUrl",
-        userImgUrl: "userImgUrl",
-        playCount: "playCount",
-        commentCount: "commentCount",
-        voteCount: "voteCount",
-        facebookShareUrl: "facebookShareUrl",
-        twitterShareUrl: "twitterShareUrl",
-        userName: "userName",
-        opportunityListenUrl: "opportunityListenUrl",
-        submissionStatsUrl: "submissionStatsUrl"
     },
     "if_statement": {
         one: "one",
@@ -128,9 +116,13 @@ describe("swig-emails", function() {
             });
             pend.wait(function(err) {
                 if (err) return cb(err);
-                assert.strictEqual(actualHtml.trim(), expectedHtml.trim());
+
+                if (actualHtml.trim() !== expectedHtml.trim()) {
+                    return cb(new Error("Invalid html"));
+                }
+
                 if (expectedText) {
-                    assert.strictEqual(actualText.trim(), expectedText.trim());
+                    if (actualText.trim() !== expectedText.trim()) return cb(new Error("Invalid text"));
                 }
                 cb();
             });
