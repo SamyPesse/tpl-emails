@@ -1,11 +1,11 @@
-swig-emails
+tpl-emails
 ==========
 
 [![Build Status](https://travis-ci.org/SamyPesse/tpl-emails.png?branch=master)](https://travis-ci.org/SamyPesse/tpl-emails)
 [![NPM version](https://badge.fury.io/js/tpl-emails.svg)](http://badge.fury.io/js/tpl-emails)
 
 
-Generate HTML emails using swig templates. Inspired by [andrewrk/swig-email-templates](https://github.com/andrewrk/swig-email-templates).
+Generate HTML emails using templating engine (nunjuncks by default). Inspired by [andrewrk/swig-email-templates](https://github.com/andrewrk/swig-email-templates).
 
 
 ## Features
