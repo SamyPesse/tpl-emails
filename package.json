@@ -1,14 +1,14 @@
 {
-    "name": "swig-emails",
+    "name": "tpl-emails",
     "version": "2.0.0",
-    "description": "Generate HTML emails using swig templates",
+    "description": "Generate HTML emails using templating engine",
     "main": "lib/index.js",
     "scripts": {
         "test": "mocha --reporter spec"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/SamyPesse/swig-email.git"
+        "url": "git://github.com/SamyPesse/tpl-emails.git"
     },
     "author": "Samy Pesse",
     "license": "Apache 2",
@@ -17,7 +17,7 @@
         "pend": "~1.1.2"
     },
     "dependencies": {
-        "swig": "~1.4.1",
+        "nunjucks": "1.1.0",
         "juice": "0.5.0",
         "cheerio": "0.17.0",
         "optimist": "~0.6.1",
