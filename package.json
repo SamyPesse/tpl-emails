@@ -1,6 +1,6 @@
 {
     "name": "tpl-emails",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Generate HTML emails using templating engine",
     "main": "lib/index.js",
     "scripts": {
