@@ -9,4 +9,13 @@ describe('Inline CSS', function () {
             done();
         });
     });
+
+    it('should correctly inline it from external file', function(done) {
+        testTemplate("css.external.html", {}, function(err, $, text) {
+            if (err) return done(err);
+
+            assert.equal($("a").css("color"), "red")
+            done();
+        });
+    });
 });
